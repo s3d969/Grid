@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&family=Noto+Sans&family=Tajawal&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --color1: #6601ce;
+  --color2: #03cfde;
+}
+body {
+  background-color: #e7e7e7;
+  font-family: "Noto Sans";
+}
+
+.grid {
+  width: 1080px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+}
+/* Start children grid class baby */
+.baby1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+.baby2 {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+.baby3 {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 4;
+}
+.baby4 {
+  grid-row: span 3;
+}
+.baby5 {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+}
+.baby6 {
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 2;
+}
+.baby7 {
+  grid-column: 1 / span 1;
+  grid-row: 5 / span 1;
+}
+.baby8 {
+  grid-column: 2 / span 1;
+  grid-row: 5 / span 1;
+}
+.baby9 {
+  grid-column: 3 / span 1;
+  grid-row: 5 / span 1;
+}
+.baby10 {
+  grid-column: 4 / span 1;
+  grid-row: 5 / span 1;
+}
+/* Start screen width 800px  */
+@media only screen and (max-width: 800px) {
+  .grid {
+    margin: 10px auto;
+    width: 740px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 10px;
+  }
+  /* Start children grid class baby */
+  .baby1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / 2;
+  }
+  .baby2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / 2;
+  }
+  .baby3 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / 2;
+  }
+  .baby4 {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+  }
+  .baby5 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+  .baby6 {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+  }
+  .baby7 {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+  }
+  .baby8 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+  }
+  .baby9 {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+  }
+  .baby10 {
+    grid-column: 3 / span 3;
+    grid-row: 4 / span 1;
+  }
+}
+/* Start screen width 500px  */
+@media only screen and (max-width: 500px) {
+  .grid {
+    margin: 10px auto;
+    width: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, auto);
+    gap: 10px;
+  }
+  /* Start children grid class baby */
+  .baby1 {
+    grid-column: 1 / span 3;
+    grid-row: 1 / 1;
+  }
+  .baby2 {
+    grid-column: 1 / span 3;
+    grid-row: 2 / 3;
+  }
+  .baby3 {
+    grid-column: 1 / span 3;
+    grid-row: 3 / 4;
+  }
+  .baby4 {
+    grid-column: 1 / span 3;
+    grid-row: 4 / 5;
+  }
+  .baby5 {
+    grid-column: 1 / span 3;
+    grid-row: 5 / 6;
+  }
+  .baby6 {
+    grid-column: 1 / span 3;
+    grid-row: 6 / 7;
+  }
+  .baby7 {
+    grid-column: 1 / span 3;
+    grid-row: 7 / 8;
+  }
+  .baby8 {
+    grid-column: 1 / span 3;
+    grid-row: 8 / 9;
+  }
+  .baby9 {
+    grid-column: 1 / span 3;
+    grid-row: 9 / 10;
+  }
+  .baby10 {
+    grid-column: 1 / span 3;
+    grid-row: 10 / 11;
+  }
+}
+
+/* Start  class card */
+.card {
+  background-color: #fff;
+  border-bottom: 5px solid var(--color1);
+  padding: 15px;
+  position: relative;
+}
+.card::after {
+  font: var(--fa-font-solid);
+  content: "\f10e";
+  color: var(--color1);
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.card h3 {
+  font-family: "Lato";
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+.card span.color {
+  color: #a8a8a8;
+  padding: 0 10px;
+  text-transform: capitalize;
+}
+.card p {
+  margin: 10px 0;
+  padding: 0 10px;
+  border-left: 2px dashed #a8a8a8;
+  background-image: linear-gradient(to right, transparent, #146bae10);
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+.card span.small {
+  font-size: 14px;
+  font-family: "Lato";
+}
+/* Start  class dark */
+.dark {
+  background-color: #222;
+  color: #fff;
+  border-bottom: 5px solid var(--color2);
+  position: relative;
+}
+.dark::after {
+  font: var(--fa-font-solid);
+  content: "\f10e";
+  color: var(--color2);
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.dark span.color {
+  color: var(--color2);
+  padding: 0 10px;
+}
