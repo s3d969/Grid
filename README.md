@@ -1,3 +1,3 @@
 # hello i'm s3d
-المعاينه: 
+Watch: 
 https://s3d969.github.io/Grid/
